@@ -121,7 +121,7 @@ class App extends Component {
     return (
       <div className="App-container">
         <Navbar color = "bg-light">
-          <h1 className="title"> application Configuration manager</h1>
+          <h1 className="title"> Application Configuration Manager</h1>
         </Navbar>
         <div className="add-button">
             <Button color="primary" onClick={this.toggleNewPropModal.bind(this)}>Add Property</Button>
