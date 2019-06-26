@@ -1,0 +1,34 @@
+body {
+    background-color: rgb(224, 224, 224);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.App-container {
+    margin: 20px 10px 20px 10px;
+}
+
+.title {
+    margin: auto;
+}
+
+button {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+table {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+table, td {
+    border-bottom: 1px solid black;
+    border-collapse: collapse;
+}
+
+th{
+    background-color: dimgrey;
+    border-bottom: 2px solid black;
+}
+.add-button {
+    margin: inherit;
+    text-align: center;
+}

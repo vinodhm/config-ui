@@ -121,9 +121,11 @@ class App extends Component {
     return (
       <div className="App-container">
         <Navbar color = "bg-light">
-          <h1> application Configuration manager</h1>
+          <h1 className="title"> application Configuration manager</h1>
         </Navbar>
-        <Button className={"my-3"} color="primary" onClick={this.toggleNewPropModal.bind(this)}>Add Property</Button>
+        <div className="add-button">
+            <Button color="primary" onClick={this.toggleNewPropModal.bind(this)}>Add Property</Button>
+        </div>
         <Modal isOpen={this.state.newPropModal} toggle={this.toggleNewPropModal.bind(this)}>
           <ModalHeader toggle={this.toggleNewPropModal.bind(this)}>New Application property</ModalHeader>
           <ModalBody>
@@ -167,7 +169,6 @@ class App extends Component {
                   this.setState({newPropData})
               }}/>
               <Label check>
-                  <span>Encrypt value</span>
                 <Input type="checkbox" className="ml-lg-l" value={this.state.newPropData.isEncrypted} onChange={(e) => {
                 let { newPropData } = this.state;
                 newPropData.isEncrypted = e.target.checked;
@@ -175,6 +176,7 @@ class App extends Component {
                 this.setState({newPropData})
                 }}
                 />
+                  <span>Encrypt value</span>
               </Label>            
             </FormGroup>
           </ModalBody>
